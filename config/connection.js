@@ -5,8 +5,8 @@ console.log(process.env.DB_USER);
 
 let sequelize;
 
-if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+if (process.env.JAWSDB_SILVER_URL) {
+  sequelize = new Sequelize(process.env.JAWSDB_SILVER_URL);
 } else {
   sequelize = new Sequelize(
     (process.env.DB_NAME || 'budgetbudget_db'),
